@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2024 at 01:26 PM
+-- Generation Time: Jun 13, 2024 at 01:29 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -237,51 +237,6 @@ CREATE TABLE `employee_leave` (
   `earned_sick` float DEFAULT NULL,
   `event_type` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `employee_leave`
---
-
-INSERT INTO `employee_leave` (`leave_id`, `employee_id`, `leave_type`, `special_leave`, `start_date`, `end_date`, `status`, `reason`, `leave_form`, `med_cert`, `days`, `credit_cost`, `credit_balance`, `reject_reason`, `date_earned`, `earned_service`, `earned_vacation`, `earned_sick`, `event_type`) VALUES
-(324, '18-UR-0175', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2024-01-31', 1.5, 1.5, 1.5, 'earn'),
-(325, '18-UR-0175', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2024-02-29', 3, 3, 3, 'earn'),
-(326, '18-UR-0175', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2024-03-31', 4.5, 4.5, 4.5, 'earn'),
-(327, '18-UR-0175', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2024-04-30', 6, 6, 6, 'earn'),
-(328, '18-UR-0175', 1, 'false', '2024-06-01', '2024-06-01', 'Pending', 'nilagnat', NULL, NULL, 0, 0.5, 5.71, '', NULL, NULL, NULL, NULL, 'leave'),
-(329, '18-UR-0175', 1, 'false', '2024-06-01', '2024-06-01', 'Pending', 'sinipon employee', NULL, NULL, 0, 0.5, 5.21, '', NULL, NULL, NULL, NULL, 'leave'),
-(330, '18-UR-0175', 1, 'false', '2024-06-01', '2024-06-01', 'Pending', 'as', NULL, NULL, 1, 1, 4.21, '', NULL, NULL, NULL, NULL, 'leave'),
-(331, '21-UR-0183', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2023-01-31', 1.5, 1.5, 1.5, 'earn'),
-(332, '21-UR-0183', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2023-02-28', 3, 3, 3, 'earn'),
-(333, '21-UR-0183', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2023-03-31', 4.5, 4.5, 4.5, 'earn'),
-(334, '21-UR-0183', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2023-04-30', 6, 6, 6, 'earn'),
-(335, '21-UR-0183', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2023-05-31', 7.5, 7.5, 7.5, 'earn'),
-(336, '21-UR-0183', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2023-06-30', 9, 9, 9, 'earn'),
-(337, '21-UR-0183', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2023-07-31', 10.5, 10.5, 10.5, 'earn'),
-(338, '21-UR-0183', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2023-08-31', 12, 12, 12, 'earn'),
-(339, '21-UR-0183', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2023-09-30', 13.5, 13.5, 13.5, 'earn'),
-(340, '21-UR-0183', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2023-10-31', 15, 15, 15, 'earn'),
-(341, '21-UR-0183', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2023-11-30', 16.5, 16.5, 16.5, 'earn'),
-(342, '21-UR-0183', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2023-12-31', 18, 18, 18, 'earn'),
-(343, '21-UR-0183', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2024-01-31', 19.5, 19.5, 19.5, 'earn'),
-(344, '21-UR-0183', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2024-02-29', 21, 21, 21, 'earn'),
-(345, '21-UR-0183', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2024-03-31', 22.5, 22.5, 22.5, 'earn'),
-(346, '21-UR-0183', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2024-04-30', 24, 24, 24, 'earn'),
-(347, '21-UR-0183', 1, 'false', '2024-06-01', '2024-06-01', 'Pending', 'as', NULL, NULL, 0, 0.5, 20.83, '', NULL, NULL, NULL, NULL, 'leave'),
-(348, '17-UR-0104', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2024-01-31', 1.5, 1.5, 1.5, 'earn'),
-(349, '17-UR-0104', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2024-02-29', 3, 3, 3, 'earn'),
-(350, '17-UR-0104', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2024-03-31', 4.5, 4.5, 4.5, 'earn'),
-(351, '17-UR-0104', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2024-04-30', 6, 6, 6, 'earn'),
-(352, '17-UR-0104', 1, 'true', '2024-06-01', '2024-06-01', 'Pending', 'going to america', NULL, NULL, 1, 1, 5.21, '', NULL, NULL, NULL, NULL, 'leave'),
-(353, '17-UR-0104', 1, 'false', '2024-06-01', '2024-06-01', 'Pending', 'Employee needs to rest', NULL, NULL, 0, 0.5, 4.71, '', NULL, NULL, NULL, NULL, 'leave'),
-(354, '18-UR-0099', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2024-02-29', 1.5, 1.5, 1.5, 'earn'),
-(355, '18-UR-0099', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2024-03-31', 3, 3, 3, 'earn'),
-(356, '18-UR-0099', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2024-04-30', 4.5, 4.5, 4.5, 'earn'),
-(357, '18-UR-0099', 1, 'true', '2024-06-01', '2024-06-01', 'Pending', 'Employee will travel to america', NULL, NULL, 0, 0.5, 4.43, '', NULL, NULL, NULL, NULL, 'leave'),
-(358, '21-UR-0183', 1, 'false', '2024-06-13', '2024-06-15', 'Pending', 'sample reason', NULL, NULL, 3, 3, 17.83, '', NULL, NULL, NULL, NULL, 'leave'),
-(359, '21-UR-0183', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2024-05-31', 25.5, 25.5, 25.5, 'earn'),
-(360, '21-UR-0183', 1, 'false', '2024-06-02', '2024-06-02', 'Pending', 'need some rest', NULL, NULL, 0, 0.5, 17.41, '', NULL, NULL, NULL, NULL, 'leave'),
-(361, '17-UR-0104', NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0, 0, '', '2024-05-31', 7.5, 7.5, 7.5, 'earn'),
-(362, '17-UR-0104', 1, 'false', '2024-06-02', '2024-06-02', 'Pending', 'need vacation', NULL, NULL, 0, 0.5, 4.3, '', NULL, NULL, NULL, NULL, 'leave');
 
 -- --------------------------------------------------------
 
